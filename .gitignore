@@ -1,0 +1,23 @@
+# --- Données ---
+# Par défaut, AUCUNE donnée n'est versionnée (règle CLAUDE.md : jamais de données clients sur Git).
+# Exception explicite : le dataset 100 % fictif fourni pour le développement et les tests.
+data/*
+!data/raw/
+data/raw/*
+!data/raw/dataset_ventes_fictif_v2.xlsx
+
+# --- Secrets ---
+.env
+.env.*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# --- Divers ---
+.DS_Store
+.ipynb_checkpoints/
